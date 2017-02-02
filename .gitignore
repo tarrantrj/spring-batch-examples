@@ -17,7 +17,7 @@
 
 # Other
 .classpath
-.swp
+*.swp
 target/
 pom.xml.tag
 pom.xml.releaseBackup
