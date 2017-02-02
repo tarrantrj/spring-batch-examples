@@ -24,13 +24,13 @@ public class AttemptWriter implements ItemWriter<Attempt> {
 
 		for (Attempt attempt : attempts) {
 			if (attempt.isSuccess()) {
-				logger.info("Attempt was successful");
+				//logger.info("Attempt was successful");
 			}
-			moveFiles(attempt);
+			moveFile(attempt);
 		}		
 	}
 
-	private void moveFiles(Attempt attempt) {
+	private void moveFile(Attempt attempt) {
 		if (!attempt.hasSystemError()) {
 			File processedDateDirectory = new File(processedDirectory + System.getProperty("file.separator")
 					+ new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis()));

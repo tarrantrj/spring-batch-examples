@@ -19,7 +19,7 @@ public class AttemptReader implements ItemReader<Attempt> {
 	@Value("${input-directory}")
 	private String inputDirectoryLocation;
 
-	private Queue<Attempt> attemptQueue = new LinkedList<Attempt>();
+	private static Queue<Attempt> attemptQueue = new LinkedList<Attempt>();
 
 	@PostConstruct
 	public void initialize() {
@@ -36,9 +36,10 @@ public class AttemptReader implements ItemReader<Attempt> {
 		logger.info("{} attempts queued.", attemptQueue.size());
 	}
 
-	public Attempt read() throws Exception {
+	public synchronized Attempt read() throws Exception {
 		Attempt attempt = null;
 
+//		logger.info("Attempt Queue size {}.", attemptQueue.size());
 		if (attemptQueue.size() > 0) {
 			attempt = attemptQueue.remove();
 		}

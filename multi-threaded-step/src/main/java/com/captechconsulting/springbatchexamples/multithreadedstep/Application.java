@@ -2,6 +2,8 @@ package com.captechconsulting.springbatchexamples.multithreadedstep;
 
 import javax.sql.DataSource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.DefaultBatchConfigurer;
@@ -23,6 +25,8 @@ import org.springframework.core.task.TaskExecutor;
 @SpringBootApplication
 @EnableBatchProcessing
 public class Application extends DefaultBatchConfigurer {
+	
+	public final static Logger logger = LoggerFactory.getLogger(Application.class);
 
 	@Autowired
 	public JobBuilderFactory jobBuilderFactory;
@@ -32,12 +36,6 @@ public class Application extends DefaultBatchConfigurer {
 
 	@Value("${chunk-size}")
 	private int chunkSize;
-
-	@Value("${max-attempts}")
-	private int maxAttempts;
-
-	@Value("${backoff-period}")
-	private int backoffPeriod;
 
 	@Value("${max-threads}")
 	private int maxThreads;
@@ -65,8 +63,18 @@ public class Application extends DefaultBatchConfigurer {
 	}
 
 	@Bean
-	public JobCompletionNotificationListener listener() {
+	public JobCompletionNotificationListener jobExecutionListener() {
 		return new JobCompletionNotificationListener();
+	}
+	
+	@Bean
+	public StepExecutionNotificationListener stepExecutionListener() {
+		return new StepExecutionNotificationListener();
+	}
+	
+	@Bean
+	public ChunkExecutionListener chunkListener() {
+		return new ChunkExecutionListener();
 	}
 
 	@Bean
@@ -78,18 +86,28 @@ public class Application extends DefaultBatchConfigurer {
 
 	@Bean
 	public Job processAttemptJob() {
-		return jobBuilderFactory.get("process-attempt-job").incrementer(new RunIdIncrementer()).listener(listener())
+		return jobBuilderFactory.get("process-attempt-job")
+				.incrementer(new RunIdIncrementer())
+				.listener(jobExecutionListener())
 				.flow(step()).end().build();
 	}
 
 	@Bean
 	public Step step() {
-		return stepBuilderFactory.get("step").<Attempt, Attempt>chunk(chunkSize).reader(processAttemptReader())
-				.processor(processAttemptProcessor()).writer(processAttemptWriter()).taskExecutor(taskExecutor())
+		return stepBuilderFactory.get("step").<Attempt, Attempt>chunk(chunkSize)
+				.reader(processAttemptReader())
+				.processor(processAttemptProcessor())
+				.writer(processAttemptWriter())
+				.taskExecutor(taskExecutor())
+				.listener(stepExecutionListener())
+				.listener(chunkListener())
 				.throttleLimit(maxThreads).build();
 	}
 
 	public static void main(String[] args) {
+		long time = System.currentTimeMillis();
 		SpringApplication.run(Application.class, args);
+		time = System.currentTimeMillis() - time;
+		logger.info("Runtime: {} seconds.", ((double)time/1000));
 	}
 }
