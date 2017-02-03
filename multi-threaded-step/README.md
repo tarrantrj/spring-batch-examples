@@ -7,20 +7,17 @@ This project is built using Maven.
 *Assuming the user has maven installed follow these steps:*
 
 1. In a terminal navigate to ***multi-threaded-step*** project. For example if the project is located at ~/workspace/spring-batch-examples/multi-threaded-step
-```
-cd ~/workspace/spring-batch-examples/multi-threaded-step
-```
-
+   ```
+   cd ~/workspace/spring-batch-examples/multi-threaded-step
+   ```
 2. To clean the project using the already installed maven command.
-```
-mvn clean
-```
-
+   ```
+   mvn clean
+   ```
 3. Create the executable using the maven install command.
-```
-mvn install
-```
-
+   ```
+   mvn install
+   ```
 4. Verify build was successful with maven output and/or checking that the target jar files were created.
 
 The jar file that is created is an executable jar.
