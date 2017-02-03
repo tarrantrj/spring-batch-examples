@@ -21,9 +21,7 @@ This project is built using Maven.
    ```
    mvn install
    ```
-4. Verify build was successful with maven output and/or checking that the target jar files were created.
-
-The jar file that is created is an executable jar.
+4. Verify build was successful with maven output and/or checking that the target jar files were created. The jar file that is created is an executable jar.
 
 ## Setup
 The default run structure is setup in the /opt directory and is as follows:
