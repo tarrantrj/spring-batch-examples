@@ -40,7 +40,9 @@ The default run structure is setup in the /opt directory and is as follows:
     * automatically created by the application if files successfully process.
     * creates a subfolder in yyyy-MM-dd format for file history.
   * **samples** - sample file that can be copied for processing.
+    * can use [sample](./src/test/resources/samples) or create your own arbirtray file
   * **scripts** - location of scripts used for setup, running, and other miscellaneous uses you may have.
+    * can use [scripts](./src/test/resources/scripts) or create your own script for setup.
 
 Note: Currently the project is setup to run in Linux and MacOS environments. This should be easily ported to a Windows console application by modifying some of the parameters in the application.properties and logback.xml.
 
@@ -63,7 +65,7 @@ To override the entire application.properties with an application properties wit
 
 The recommended approach is *override the individual property and NOT the entire file*. This will prevent potential issues if the application.properties file is updated with new properties that the user forgets to add to their individual application.properties file.
 
-## Logging
+## Logging Configuration
 The logging uses the default Spring Boot logging and is configured with [logback.xml](./src/main/resources/logback.xml). This log allows logging to both the console and to a file. The level of logging and size can be controlled in the log file.
 
 To override the logback.xml include **--logging.config=[/path/to/custom/logback.xml]** as a runtime argument. For example:
@@ -71,7 +73,7 @@ To override the logback.xml include **--logging.config=[/path/to/custom/logback.
 --logging.config=/opt/multi-threaded-step/config/logback.xml
 ```
 
-## Run
+## How to Run
 
 The jar file created is an executable jar file. This means that the program can be run using the **java -jar [/path/to/multi-threaded-step-1.0.jar]** command. Here are a few examples for running.
 
