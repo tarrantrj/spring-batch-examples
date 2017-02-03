@@ -80,17 +80,17 @@ Running the jar file from the command line without any options:
 java -jar ~/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar
 ```
 
-Running the jar file from the command line overriding the *chunk-size* property:
+Running the jar file from the command line overriding the **chunk-size** property:
 ```
 java -jar ~/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar --chunk-size=4
 ```
 
-Running the jar file from the command line overriding the logging config file:
+Running the jar file from the command line overriding the **logging config** file:
 ```
-java -jar /Users/rtarrant/Documents/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar --logging.config=/opt/multi-threaded-step/config/logback.xml
+java -jar ~/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar --logging.config=/opt/multi-threaded-step/config/logback.xml
 ```
 
-Running the jar file from the command line overriding the logging config file and the *chunk-size* property:
+Running the jar file from the command line overriding the **logging config** file and the **chunk-size** property:
 ```
-java -jar /Users/rtarrant/Documents/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar --chunk-size=4 --logging.config=/opt/multi-threaded-step/config/logback.xml
+java -jar ~/workspace/spring-batch-examples/multi-threaded-step/target/multi-threaded-step-1.0.jar --chunk-size=4 --logging.config=/opt/multi-threaded-step/config/logback.xml
 ```
