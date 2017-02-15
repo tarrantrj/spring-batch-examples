@@ -18,7 +18,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 
@@ -41,7 +40,6 @@ public class Application extends DefaultBatchConfigurer {
 	private int maxThreads;
 
 	@Bean
-	@Primary
 	@ConfigurationProperties(prefix = "spring.datasource")
 	public DataSource batchDataSource() {
 		return DataSourceBuilder.create().build();

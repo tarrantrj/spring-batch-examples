@@ -22,6 +22,8 @@ public class AttemptWriter implements ItemWriter<Attempt> {
 	@Override
 	public void write(List<? extends Attempt> attempts) throws Exception {
 
+		logger.info("Write attempt list: {}",attempts);
+
 		for (Attempt attempt : attempts) {
 			if (attempt.isSuccess()) {
 				//logger.info("Attempt was successful");

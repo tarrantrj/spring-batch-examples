@@ -46,6 +46,6 @@ public class Attempt {
 	
 	@Override
 	public String toString() {
-		return "ProcessAttempt[success,systemError]: [" + success + ", " + systemError + "]";
+		return "Attempt[" + file.getName() + ", " + success + "]";
 	}
 }
