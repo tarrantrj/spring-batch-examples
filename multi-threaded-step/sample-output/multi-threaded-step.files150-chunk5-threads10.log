@@ -1,0 +1,586 @@
+2017-02-15 12:29:29 INFO  [c.c.s.m.Application]:48 - Starting Application on mbp-rtarrant.local with PID 43445 (/Users/rtarrant/Documents/workspace/spring-batch-examples/multi-threaded-step/target/classes started by rtarrant in /Users/rtarrant/Documents/workspace/spring-batch-examples/multi-threaded-step)
+2017-02-15 12:29:29 INFO  [c.c.s.m.Application]:661 - No active profile set, falling back to default profiles: default
+2017-02-15 12:29:29 INFO  [o.s.c.a.AnnotationConfigApplicationContext]:582 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@29f69090: startup date [Wed Feb 15 12:29:29 EST 2017]; root of context hierarchy
+2017-02-15 12:29:30 WARN  [o.s.c.a.ConfigurationClassEnhancer]:348 - @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2017-02-15 12:29:30 WARN  [o.s.c.a.ConfigurationClassEnhancer]:348 - @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2017-02-15 12:29:30 INFO  [o.s.b.c.r.s.JobRepositoryFactoryBean]:183 - No database type set, using meta data indicating: H2
+2017-02-15 12:29:30 INFO  [o.s.b.c.l.s.SimpleJobLauncher]:195 - No TaskExecutor has been set, defaulting to synchronous executor.
+2017-02-15 12:29:30 INFO  [c.c.s.m.AttemptReader]:26 - scanning file directory: /opt/multi-threaded-step/input.
+2017-02-15 12:29:30 INFO  [c.c.s.m.AttemptReader]:36 - 150 attempts queued.
+2017-02-15 12:29:30 INFO  [o.s.j.d.i.ScriptUtils]:444 - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2017-02-15 12:29:30 INFO  [o.s.j.d.i.ScriptUtils]:510 - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 9 ms.
+2017-02-15 12:29:31 INFO  [o.s.j.e.a.AnnotationMBeanExporter]:431 - Registering beans for JMX exposure on startup
+2017-02-15 12:29:31 INFO  [o.s.b.a.b.JobLauncherCommandLineRunner]:118 - Running default command line with: []
+2017-02-15 12:29:31 INFO  [o.s.b.c.l.s.SimpleJobLauncher]:133 - Job: [FlowJob: [name=process-attempt-job]] launched with the following parameters: [{-logging.config=/opt/multi-threaded-step/config/logback.xml, -chunk-size=4, run.id=36}]
+2017-02-15 12:29:31 INFO  [c.c.s.m.JobCompletionNotificationListener]:17 - Job Started
+2017-02-15 12:29:31 INFO  [o.s.b.c.j.SimpleStepHandler]:146 - Executing step: [step]
+2017-02-15 12:29:31 INFO  [c.c.s.m.StepExecutionNotificationListener]:21 - Before step
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.1.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.130.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.137.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.118.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.10.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.135.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.101.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.111.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.100.fit.
+2017-02-15 12:29:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.120.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.120.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.118.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.10.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.101.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.130.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.100.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.111.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.135.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.137.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.1.fit 
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.122.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.119.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.127.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.104.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.131.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.102.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.114.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.136.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.139.fit.
+2017-02-15 12:29:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.103.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.114.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.127.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.136.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.102.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.104.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.139.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.119.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.131.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.122.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.103.fit 
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.115.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.128.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.138.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.105.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.107.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.140.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.12.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.132.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.124.fit.
+2017-02-15 12:29:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.106.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.12.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.140.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.128.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.107.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.138.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.132.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.105.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.106.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.124.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.115.fit 
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.121.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.142.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.129.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.11.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.14.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.133.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.108.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.109.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.125.fit.
+2017-02-15 12:29:46 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.116.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.129.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.133.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.14.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.142.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.121.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.109.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.108.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.11.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.125.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.116.fit 
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.13.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.134.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.141.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.143.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.123.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.112.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.110.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.113.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.126.fit.
+2017-02-15 12:29:51 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.117.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.13.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.112.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.143.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.123.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.134.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.141.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.110.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.113.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.126.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.117.fit 
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.10.fit, true], Attempt[bike.127.fit, true], Attempt[bike.128.fit, true], Attempt[bike.129.fit, true], Attempt[bike.13.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.1.fit, true], Attempt[bike.103.fit, true], Attempt[bike.106.fit, true], Attempt[bike.109.fit, true], Attempt[bike.112.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.137.fit, true], Attempt[bike.139.fit, true], Attempt[bike.140.fit, true], Attempt[bike.142.fit, true], Attempt[bike.143.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.118.fit, true], Attempt[bike.119.fit, true], Attempt[bike.12.fit, true], Attempt[bike.121.fit, true], Attempt[bike.123.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.130.fit, true], Attempt[bike.131.fit, true], Attempt[bike.132.fit, true], Attempt[bike.133.fit, true], Attempt[bike.134.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.135.fit, true], Attempt[bike.136.fit, true], Attempt[bike.138.fit, true], Attempt[bike.14.fit, true], Attempt[bike.141.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.100.fit, true], Attempt[bike.102.fit, true], Attempt[bike.105.fit, true], Attempt[bike.108.fit, true], Attempt[bike.110.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.101.fit, true], Attempt[bike.104.fit, true], Attempt[bike.107.fit, true], Attempt[bike.11.fit, true], Attempt[bike.113.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.120.fit, true], Attempt[bike.122.fit, true], Attempt[bike.124.fit, true], Attempt[bike.125.fit, true], Attempt[bike.126.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.111.fit, true], Attempt[bike.114.fit, true], Attempt[bike.115.fit, true], Attempt[bike.116.fit, true], Attempt[bike.117.fit, true]]
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.1.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.10.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.137.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.118.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.130.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.135.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.100.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.101.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.120.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.111.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.103.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.127.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.119.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.131.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.139.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.136.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.102.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.104.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.122.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.114.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.106.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.128.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.12.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.132.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.140.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.138.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.105.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.107.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.124.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.115.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.109.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.129.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.121.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.133.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.142.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.14.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.108.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.11.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.125.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.116.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.112.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.13.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.123.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.134.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.143.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.141.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.110.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.113.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.126.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.117.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.144.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.149.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.18.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.22.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.27.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.31.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.36.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.40.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.45.fit.
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:29:56 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.5.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.149.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.144.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.15.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.145.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.18.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.27.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.22.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.19.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 4.999 seconds to process file bike.31.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.28.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.23.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.32.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.36.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.40.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.37.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.41.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.45.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.46.fit.
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.5.fit 
+2017-02-15 12:30:01 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.50.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.15.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.150.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.145.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.146.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.23.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.19.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.32.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.28.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.24.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.2.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.33.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.29.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 4.999 seconds to process file bike.37.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.38.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.41.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.42.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.46.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.47.fit.
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.50.fit 
+2017-02-15 12:30:06 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.51.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.146.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.150.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.147.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.16.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.2.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.24.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.29.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.33.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.25.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.20.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.38.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.3.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.34.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.39.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.47.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.42.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.48.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.43.fit.
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.51.fit 
+2017-02-15 12:30:11 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.52.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.16.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.147.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.17.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.148.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.20.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.39.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.34.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.25.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.3.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.21.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.4.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.35.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.26.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.30.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.48.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.43.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.49.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.44.fit.
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.52.fit 
+2017-02-15 12:30:16 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.53.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.17.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.149.fit, true], Attempt[bike.15.fit, true], Attempt[bike.150.fit, true], Attempt[bike.16.fit, true], Attempt[bike.17.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.149.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.15.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.150.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.16.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.148.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.144.fit, true], Attempt[bike.145.fit, true], Attempt[bike.146.fit, true], Attempt[bike.147.fit, true], Attempt[bike.148.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.17.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.144.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.145.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.146.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.147.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.148.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.54.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.59.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.30.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.21.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.26.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.4.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.35.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.27.fit, true], Attempt[bike.28.fit, true], Attempt[bike.29.fit, true], Attempt[bike.3.fit, true], Attempt[bike.30.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.18.fit, true], Attempt[bike.19.fit, true], Attempt[bike.2.fit, true], Attempt[bike.20.fit, true], Attempt[bike.21.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.22.fit, true], Attempt[bike.23.fit, true], Attempt[bike.24.fit, true], Attempt[bike.25.fit, true], Attempt[bike.26.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.36.fit, true], Attempt[bike.37.fit, true], Attempt[bike.38.fit, true], Attempt[bike.39.fit, true], Attempt[bike.4.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.31.fit, true], Attempt[bike.32.fit, true], Attempt[bike.33.fit, true], Attempt[bike.34.fit, true], Attempt[bike.35.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.27.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.18.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.22.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.36.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.31.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.28.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.19.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.23.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.32.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.37.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.29.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.2.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.24.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.33.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.38.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.20.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.3.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.25.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.34.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.39.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.21.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.30.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.26.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.35.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.4.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.49.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.44.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.53.fit 
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.45.fit, true], Attempt[bike.46.fit, true], Attempt[bike.47.fit, true], Attempt[bike.48.fit, true], Attempt[bike.49.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.40.fit, true], Attempt[bike.41.fit, true], Attempt[bike.42.fit, true], Attempt[bike.43.fit, true], Attempt[bike.44.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.5.fit, true], Attempt[bike.50.fit, true], Attempt[bike.51.fit, true], Attempt[bike.52.fit, true], Attempt[bike.53.fit, true]]
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.45.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.40.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.5.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.46.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.41.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.50.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.42.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.51.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.47.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.43.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.52.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.48.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.63.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.44.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.53.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.49.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.68.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.72.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.77.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.81.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.86.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.90.fit.
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:21 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.95.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.54.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.59.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.55.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.6.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.63.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.64.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.68.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.72.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.69.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.73.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.81.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.005 seconds to process file bike.77.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.86.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.82.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.78.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.87.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.90.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.95.fit 
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.91.fit.
+2017-02-15 12:30:26 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.96.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.55.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.6.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.56.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.60.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.64.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.65.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.69.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.73.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.7.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.74.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.78.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.82.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.87.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.79.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.83.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.88.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.91.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.96.fit 
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.92.fit.
+2017-02-15 12:30:31 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.97.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.56.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.60.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.57.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.61.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.74.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.7.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.65.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.75.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.70.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.66.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.83.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.79.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.88.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.84.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.8.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.89.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.92.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.93.fit.
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.97.fit 
+2017-02-15 12:30:36 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.98.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.57.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.61.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.58.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.62.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.66.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.70.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.75.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.67.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.71.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.76.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.8.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.89.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.001 seconds to process file bike.84.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.80.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.9.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.85.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.93.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.94.fit.
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.004 seconds to process file bike.98.fit 
+2017-02-15 12:30:41 INFO  [c.c.s.m.AttemptProcessor]:14 - Start Processing file bike.99.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.58.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.62.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.54.fit, true], Attempt[bike.55.fit, true], Attempt[bike.56.fit, true], Attempt[bike.57.fit, true], Attempt[bike.58.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.59.fit, true], Attempt[bike.6.fit, true], Attempt[bike.60.fit, true], Attempt[bike.61.fit, true], Attempt[bike.62.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.54.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.59.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.6.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.55.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.60.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.56.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.61.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.57.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.62.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.58.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.76.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.71.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.002 seconds to process file bike.67.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.72.fit, true], Attempt[bike.73.fit, true], Attempt[bike.74.fit, true], Attempt[bike.75.fit, true], Attempt[bike.76.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.68.fit, true], Attempt[bike.69.fit, true], Attempt[bike.7.fit, true], Attempt[bike.70.fit, true], Attempt[bike.71.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.63.fit, true], Attempt[bike.64.fit, true], Attempt[bike.65.fit, true], Attempt[bike.66.fit, true], Attempt[bike.67.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.72.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.68.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.63.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.73.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.69.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.64.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.74.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.7.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.65.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.75.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.70.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.66.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.76.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.71.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.67.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.9.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.85.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.80.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.86.fit, true], Attempt[bike.87.fit, true], Attempt[bike.88.fit, true], Attempt[bike.89.fit, true], Attempt[bike.9.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.81.fit, true], Attempt[bike.82.fit, true], Attempt[bike.83.fit, true], Attempt[bike.84.fit, true], Attempt[bike.85.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.77.fit, true], Attempt[bike.78.fit, true], Attempt[bike.79.fit, true], Attempt[bike.8.fit, true], Attempt[bike.80.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.86.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.81.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.77.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.82.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.87.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.78.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.83.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.88.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.79.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.84.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.89.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.8.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.85.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.9.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.80.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.003 seconds to process file bike.94.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.90.fit, true], Attempt[bike.91.fit, true], Attempt[bike.92.fit, true], Attempt[bike.93.fit, true], Attempt[bike.94.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.90.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.91.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.92.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptProcessor]:18 - 5.0 seconds to process file bike.99.fit 
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.93.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:25 - Write attempt list: [Attempt[bike.95.fit, true], Attempt[bike.96.fit, true], Attempt[bike.97.fit, true], Attempt[bike.98.fit, true], Attempt[bike.99.fit, true]]
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.95.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.94.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.96.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.97.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.98.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.AttemptWriter]:50 - Moving processed document: bike.99.fit.
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:21 - Before chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.ChunkExecutionListener]:14 - After chunk
+2017-02-15 12:30:46 INFO  [c.c.s.m.StepExecutionNotificationListener]:15 - After step
+2017-02-15 12:30:46 INFO  [c.c.s.m.JobCompletionNotificationListener]:23 - Job Completed
+2017-02-15 12:30:46 INFO  [o.s.b.c.l.s.SimpleJobLauncher]:136 - Job: [FlowJob: [name=process-attempt-job]] completed with the following parameters: [{-logging.config=/opt/multi-threaded-step/config/logback.xml, -chunk-size=4, run.id=36}] and the following status: [COMPLETED]
+2017-02-15 12:30:46 INFO  [c.c.s.m.Application]:57 - Started Application in 76.556 seconds (JVM running for 77.198)
+2017-02-15 12:30:46 INFO  [c.c.s.m.Application]:109 - Runtime: 76.638 seconds.
+2017-02-15 12:30:46 INFO  [o.s.c.a.AnnotationConfigApplicationContext]:987 - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@29f69090: startup date [Wed Feb 15 12:29:29 EST 2017]; root of context hierarchy
+2017-02-15 12:30:46 INFO  [o.s.j.e.a.AnnotationMBeanExporter]:449 - Unregistering JMX-exposed beans on shutdown

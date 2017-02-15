@@ -39,7 +39,7 @@ public class AttemptReader implements ItemReader<Attempt> {
 	public synchronized Attempt read() throws Exception {
 		Attempt attempt = null;
 
-//		logger.info("Attempt Queue size {}.", attemptQueue.size());
+		logger.info("Attempt Queue size {}.", attemptQueue.size());
 		if (attemptQueue.size() > 0) {
 			attempt = attemptQueue.remove();
 		}
